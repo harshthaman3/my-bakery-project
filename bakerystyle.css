@@ -1,3 +1,4 @@
+
 .fs-12{
 	font-size: 12px;
 }
@@ -394,4 +395,234 @@ body {
   transform: scale(0.98);
 }
 
- 
+/* ============================= */
+/* Responsive Design - Tablet */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+    .container {
+        max-width: 95%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    /* Product cards */
+    .row.pt-5.gx-1 > .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* ============================= */
+/* Responsive Design - Mobile */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Keep Bootstrap rows horizontal */
+    .row {
+        flex-wrap: wrap;
+    }
+
+    /* Product cards: two per row */
+    .row.pt-5.gx-1 > .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    .banner-text h1 {
+        font-size: 30px;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+    }
+
+    .banner-image {
+        width: 100%;
+    }
+
+    .banner-image img {
+        width: 80%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .pad-1 {
+        padding-inline-start: 10px;
+    }
+
+    .pad-5 {
+        padding: 8px 15px;
+    }
+
+    .pad-6 {
+        padding-left: 5%;
+    }
+
+    .pad-7 {
+        padding-top: 5%;
+    }
+
+    .margin-1 {
+        width: 100% !important;
+        margin: 5px 0;
+    }
+
+    .width-1,
+    .width-2 {
+        width: 100%;
+    }
+
+    .slide {
+        width: 160px;
+    }
+
+    .slide img {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    button,
+    .btn {
+        max-width: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+}
+
+
+/* ============================= */
+/* Responsive Design - Small Mobile */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .banner {
+        padding: 15px;
+    }
+
+    .banner-text h1 {
+        font-size: 26px;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .row.pt-5.gx-1 > .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .slide {
+        width: 140px;
+    }
+
+    .slide img {
+        height: 180px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Prevent horizontal scrolling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
